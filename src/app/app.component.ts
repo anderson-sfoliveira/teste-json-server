@@ -1,18 +1,24 @@
-import { Component } from '@angular/core';
+import { CidadeService } from './cidade.service';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
 
-  cidades = [
-    { id: 1, nome: 'Uberlândia'},
-    { id: 2, nome: 'São Paulo'},
-    { id: 3, nome: 'Rio de Janeiro'},
-    { id: 4, nome: 'Campo Grande'}
-  ]
+  cidades = [];
+
+  constructor(private cidadeService: CidadeService) {}
+
+  // este metódo é executado quando o componente for inicializado.
+  ngOnInit() {
+    this.cidadeService.consultar()
+      .then(dados => {
+        this.cidades = dados;
+      });
+  }
 
   adicionar(nome: String) {
     alert(nome);
