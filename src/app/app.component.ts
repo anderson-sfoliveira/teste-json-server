@@ -14,14 +14,22 @@ export class AppComponent implements OnInit {
 
   // este metódo é executado quando o componente for inicializado.
   ngOnInit() {
+    this.consultar();
+  }
+
+  consultar() {
     this.cidadeService.consultar()
       .then(dados => {
         this.cidades = dados;
       });
   }
 
-  adicionar(nome: String) {
-    alert(nome);
+  adicionar(nomeCidade: String) {
+    this.cidadeService.adicionar({ nome: nomeCidade})
+      .then(cidade => {
+        alert(`Cidade "${cidade.nome}" adicionada com código ${cidade.id}!`);
+        this.consultar();
+      });
   }
 
   atualizar(cidade: any) {
