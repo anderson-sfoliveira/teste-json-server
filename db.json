@@ -5,10 +5,6 @@
       "nome": "Uberlândia"
     },
     {
-      "id": 2,
-      "nome": "São Paulo"
-    },
-    {
       "id": 3,
       "nome": "Rio de Janeiro"
     },
@@ -19,14 +15,6 @@
     {
       "nome": "asd",
       "id": 5
-    },
-    {
-      "nome": "Varze",
-      "id": 6
-    },
-    {
-      "nome": "Varze",
-      "id": 7
     }
   ]
 }
