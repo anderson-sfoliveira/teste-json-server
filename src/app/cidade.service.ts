@@ -18,6 +18,11 @@ export class CidadeService {
       .toPromise()
   }
 
+  atualizar(cidade: any): Promise<any> {
+    return this.http.put(`http://localhost:3000/cidades/${cidade.id}`, cidade)
+      .toPromise()
+  }
+
   excluir(id): Promise<void> {
     return this.http.delete(`http://localhost:3000/cidades/${id}`)
       .toPromise()

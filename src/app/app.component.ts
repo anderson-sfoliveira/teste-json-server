@@ -33,7 +33,11 @@ export class AppComponent implements OnInit {
   }
 
   atualizar(cidade: any) {
-    alert(JSON.stringify(cidade));
+    this.cidadeService.atualizar(cidade)
+      .then(c => {
+        alert(`Cidade "${c.nome}" atualizada  com código ${c.id}!`);
+        this.consultar();
+      });
   }
 
   excluir(id: number) {
