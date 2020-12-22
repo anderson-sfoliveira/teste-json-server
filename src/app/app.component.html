@@ -24,12 +24,12 @@
         </tr>
       </ng-template>
       <ng-template pTemplate="body" let-cidade>
-        <tr [pEditableRow]="cidade">
+        <tr>
           <td>{{cidade.id}}</td>
           <td class="p-fluid"><input type="text" pInputText [value]="cidade.nome" [(ngModel)]="cidade.nome"/></td>
           <td style="text-align:center">
-            <button pButton pRipple type="button" pSaveEditableRow icon="pi pi-check" (click)="atualizar(cidade)" class="p-button-rounded p-button-text p-button-success p-mr-2"></button>
-            <button pButton pRipple type="button" pCancelEditableRow icon="pi pi-times" (click)="excluir(cidade.id)" class="p-button-rounded p-button-text p-button-danger"></button>
+            <button pButton type="button" icon="pi pi-check" (click)="atualizar(cidade)" class="p-button-rounded p-button-text p-button-success"></button>
+            <button pButton type="button" icon="pi pi-times" (click)="excluir(cidade.id)" class="p-button-rounded p-button-text p-button-danger"></button>
           </td>
         </tr>
       </ng-template>
