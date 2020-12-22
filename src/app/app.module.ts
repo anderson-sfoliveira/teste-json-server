@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import {ButtonModule} from 'primeng/button';
 import {InputTextModule} from 'primeng/inputtext';
@@ -15,6 +16,8 @@ import { CidadeService } from './cidade.service';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+
     ButtonModule,
     InputTextModule,
     TableModule,

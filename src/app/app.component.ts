@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
 
+  value1 = "xx";
   cidades = [];
 
   constructor(private cidadeService: CidadeService) {}
@@ -21,6 +22,9 @@ export class AppComponent implements OnInit {
     this.cidadeService.consultar()
       .then(dados => {
         this.cidades = dados;
+      })
+      .catch(erro => {
+        alert(erro)
       });
   }
 
@@ -29,14 +33,20 @@ export class AppComponent implements OnInit {
       .then(cidade => {
         alert(`Cidade "${cidade.nome}" adicionada com código ${cidade.id}!`);
         this.consultar();
+      })
+      .catch(erro => {
+        alert(erro)
       });
   }
 
   atualizar(cidade: any) {
     this.cidadeService.atualizar(cidade)
       .then(c => {
-        alert(`Cidade "${c.nome}" atualizada  com código ${c.id}!`);
+        alert(`Cidade ${c.id} atualizada!`);
         this.consultar();
+      })
+      .catch(erro => {
+        alert(erro)
       });
   }
 
@@ -45,6 +55,9 @@ export class AppComponent implements OnInit {
       .then(() => {
         alert('Cidade excluída com sucesso!');
         this.consultar();
+      })
+      .catch(erro => {
+        alert(erro)
       });
   }
 
