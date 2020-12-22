@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
 
-  value1 = "xx";
   cidades = [];
 
   constructor(private cidadeService: CidadeService) {}
