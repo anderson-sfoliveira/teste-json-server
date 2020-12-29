@@ -17,8 +17,12 @@
       "id": 4
     },
     {
-      "nome": "Campo",
+      "nome": "Campinas",
       "id": 5
+    },
+    {
+      "nome": "Cajamar",
+      "id": 6
     }
   ]
 }
