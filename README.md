@@ -41,7 +41,7 @@
 
 ## 💻 Sobre o projeto
 
-Projeto criado para testar o pacote [__JSON Server__](https://www.npmjs.com/package/json-server). Foi criado um CRUD de cidades.
+Projeto desenvolvido para testar o pacote [__JSON Server__](https://www.npmjs.com/package/json-server). Foi criado um CRUD de cidades.
 
 ---
 
