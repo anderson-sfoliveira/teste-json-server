@@ -119,7 +119,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ## 👨🏽‍💻Autor
 
 <a href="https://www.linkedin.com/in/anderson-sfoliveira/">
- <img style="border-radius: 50%;" src="https://avatars3.githubusercontent.com/u/380327?s=460&u=61b426b901b8fe02e12019b1fdb67bf0072d4f00&v=4" width="100px;" alt=""/>
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/2175235?s=400&u=432d3456eb62f2df111abdccd667976321f6f74a&v=4" width="100px;" alt=""/>
  <br />
  <sub><b>Anderson Oliveira</b></sub></a> <a href="https://www.linkedin.com/in/anderson-sfoliveira/" title="Anderson Oliveira"></a>
  <br />
