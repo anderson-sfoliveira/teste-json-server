@@ -32,7 +32,7 @@
    * [Sobre o projeto](#-sobre-o-projeto)
    * [Como executar o projeto](#-como-executar-o-projeto)
      * [Pré-requisitos](#pré-requisitos)
-     * [Rodando o JSON Server (Backend)](#user-content--rodando-o-backend-servidor)
+     * [Rodando o JSON Server (Backend)](#user-content--rodando-o-backend-json-server)
      * [Rodando a aplicação web (Frontend)](#user-content--rodando-a-aplicação-web-frontend)
    * [Tecnologias](#-tecnologias)
    * [Autor](#-autor)
@@ -116,7 +116,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ---
 
-## 👨🏽‍💻Autor
+## 👨🏽‍💻 Autor
 
 <a href="https://www.linkedin.com/in/anderson-sfoliveira/">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/2175235?s=400&u=432d3456eb62f2df111abdccd667976321f6f74a&v=4" width="100px;" alt=""/>
